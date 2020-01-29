@@ -14,7 +14,7 @@ public class Teststeps_03 {
 	@Given("User is on Home Page")
 	public void user_is_on_Home_Page() {
 		
-	   System.out.println("User is on Home Page");
+	  
 	   System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 	   driver=new ChromeDriver();
 	   driver.get("http://localhost:8083/TestMeApp/");
@@ -25,13 +25,13 @@ public class Teststeps_03 {
 
 	@When("User Navigate to Login Page")
 	public void user_Navigate_to_Login_Page() {
-	    System.out.println("User Navigate to Login Page");
+	
 	    driver.findElement(By.xpath("//a[text()=' SignIn']")).click();  
 	}
 
 	@When("User enters {string} and {string}")
 	public void user_enters_and(String username, String password) {
-		System.out.println("User enters {string} and {string}");
+		
 		  driver.findElement(By.xpath("//input[@type='text']")).sendKeys(username);
 		  driver.findElement(By.xpath("//input[@type='password']")).sendKeys(password);
 		  driver.findElement(By.name("Login")).click();
@@ -41,7 +41,7 @@ public class Teststeps_03 {
 
 	@Then("Message displayed Login Successfully")
 	public void message_displayed_Login_Successfully() {
-	System.out.println("Message displayed Login Successfully");
+	
 	 Assert.assertTrue(driver.findElement(By.xpath("//input[@type='submit']")).isDisplayed());
 	 driver.findElement(By.partialLinkText("SignOut")).click();
 	

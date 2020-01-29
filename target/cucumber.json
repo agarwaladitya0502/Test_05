@@ -1,0 +1,419 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 15,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "user is on the login page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "user can do the successful login",
+        "description": "",
+        "id": "login;user-can-do-the-successful-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "user is on the login page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "user provides the correct credentials",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "user rendered to TestMeApp home page",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "In order to login in TestMe App\nAs a user\nI need to register first\n\nBusiness rules:\n - Ony registered users can do the login\n - user should provide all the necessary details on registration page\n \nTo Do:\n -  password should have more than 8 characters ",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "skeleton/Login.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 23316961500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Alex is on the login page",
+            "match": {
+              "location": "Stepdefs.alex_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "The one where user login successfully",
+        "description": "",
+        "id": "login;the-one-where-user-login-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 25966897200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Alex enters correct credentials",
+            "match": {
+              "location": "Stepdefs.alex_enters_correct_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 76487300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Alex can do successful login",
+            "match": {
+              "location": "Stepdefs.alex_can_do_successful_login()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 24098780200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Alex is on the login page",
+            "match": {
+              "location": "Stepdefs.alex_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "The one where user logins with multiple credentials",
+        "description": "",
+        "id": "login;the-one-where-user-logins-with-multiple-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 521067200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Alex enters username \"Lalitha\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Lalitha\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Stepdefs.alex_enters_username(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 862275300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Alex enters password \"Password123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Password123\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Stepdefs.alex_enters_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17050232600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Alex click on login",
+            "match": {
+              "location": "Stepdefs.alex_click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51364600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Alex can do successful login",
+            "match": {
+              "location": "Stepdefs.alex_can_do_successful_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@datadriven"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 28441619100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Alex is on the login page",
+            "match": {
+              "location": "Stepdefs.alex_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "The one where user logins with multiple credentials",
+        "description": "",
+        "id": "login;the-one-where-user-logins-with-multiple-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 719345000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Alex enters username \"Abhishek29\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Abhishek29\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Stepdefs.alex_enters_username(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 685480700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Alex enters password \"Password456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Password456\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Stepdefs.alex_enters_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1655713500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Alex click on login",
+            "match": {
+              "location": "Stepdefs.alex_click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat skeleton.Stepdefs.alex_can_do_successful_login(Stepdefs.java:65)\r\n\tat ✽.Alex can do successful login(skeleton/TestMeLogin.feature:23)\r\n",
+              "duration": 42638900,
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "Alex can do successful login",
+            "match": {
+              "location": "Stepdefs.alex_can_do_successful_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@datadriven"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 27107797600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Alex is on the login page",
+            "match": {
+              "location": "Stepdefs.alex_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "The one where user selects different products through search functionality",
+        "description": "",
+        "id": "login;the-one-where-user-selects-different-products-through-search-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 38233689200,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user searches the below product:",
+            "match": {
+              "location": "Stepdefs.user_searches_the_below_product(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Headphone"
+                ]
+              },
+              {
+                "cells": [
+                  "Travel"
+                ]
+              },
+              {
+                "cells": [
+                  "Laptop"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\u0027header\u0027]/div[1]/div/div/div[2]/div/a[2]/b\"}\n  (Session info: chrome\u003d75.0.3770.142)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027DDC5-D-4VL4T72\u0027, ip: \u002710.250.240.13\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_162-ea\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\\Users\\TRAINI~1.02\\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52732}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: b280094564e9457fa9bd2787aef5861e\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\u0027header\u0027]/div[1]/div/div/div[2]/div/a[2]/b}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat skeleton.Stepdefs.available_products_should_be_added_to_cart(Stepdefs.java:93)\r\n\tat ✽.available products should be added to cart(skeleton/TestMeLogin.feature:35)\r\n",
+              "duration": 15077659500,
+              "status": "failed"
+            },
+            "line": 35,
+            "name": "available products should be added to cart",
+            "match": {
+              "location": "Stepdefs.available_products_should_be_added_to_cart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@verifyproducts"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "In order to login to TestMeApp \nAs a user \nI need to register first\n\nBusiness Rules:\n - Only registered user can do the login",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "skeleton/TestMeLogin.feature",
+    "tags": []
+  }
+]
