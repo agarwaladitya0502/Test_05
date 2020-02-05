@@ -9,5 +9,14 @@ Then Message displayed Login Successfully
 
 Examples:
 | username  | password |
-| lalitha   | password123 |
 | admin    | password456 |
+
+Scenario Outline: User adds category and subcategory
+Given Users clicks on Category
+And User enters "<category>" and "<subcategory>"
+Then Message displayed category is added
+
+Examples:
+| category  | subcategory |
+| sports    | basketball  |
+| sports    | volleyball  |

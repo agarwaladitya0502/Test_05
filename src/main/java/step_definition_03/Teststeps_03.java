@@ -27,9 +27,11 @@ public class Teststeps_03 {
 	public void user_Navigate_to_Login_Page() {
 	
 	    driver.findElement(By.xpath("//a[text()=' SignIn']")).click();  
-	}
+	    
+	    }
+ 
 
-	@When("User enters {string} and {string}")
+@When("User enters {string} and {string}")
 	public void user_enters_and(String username, String password) {
 		
 		  driver.findElement(By.xpath("//input[@type='text']")).sendKeys(username);
@@ -39,13 +41,31 @@ public class Teststeps_03 {
 		
 	}
 
-	@Then("Message displayed Login Successfully")
-	public void message_displayed_Login_Successfully() {
+@Then("Message displayed Login Successfully")
+public void message_displayed_Login_Successfully() {
 	
-	 Assert.assertTrue(driver.findElement(By.xpath("//input[@type='submit']")).isDisplayed());
-	 driver.findElement(By.partialLinkText("SignOut")).click();
+	Assert.assertTrue(driver.findElement(By.xpath("//input[@type='submit']")).isDisplayed());
+	driver.findElement(By.partialLinkText("SignOut")).click();
 	
 	
 	}
 
+@When("Users click on category")
+public void Users_click_on_category()
+{
+	  driver.findElement(By.xpath("//button//h4[text()='Add Category']")).click();
 }
+
+@When("Users enters {string} and {string}")
+public void Users_enters_and(String category, String subcategory)
+
+{
+      driver.findElement(By.name("catgName")).sendKeys("Sports");
+      driver.findElement(By.name("catgDesc")).sendKeys("Sports");
+      driver.findElement(By.xpath("//button//h4[text()='Add Sub Category']")).click();
+      
+}
+
+}
+
+
